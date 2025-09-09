@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Bellota", system-ui;
+}
+body{
+    background-color: #fff6e8;
 }
 
 header{
@@ -14,7 +18,7 @@ header{
     justify-content: space-between;
     width: 90%;
     max-width: 1440px;
-    background-color: aqua;
+    /*background-color: aqua;*/
     margin: 0 auto;
     height: 100%;
     align-items: center;
@@ -29,7 +33,7 @@ header{
     width: 60%;
     max-width: 500px;
     margin: 0 10px;
-    font-family: "Bellota", system-ui;
+
     font-size: 1rem;
 }
 
@@ -63,7 +67,7 @@ header{
 }
 
 .container{
-    width: 90px;
+    /*width: 90px;*/
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -81,13 +85,13 @@ header{
     font-size: 48px;
     
 }
-    .titulo hr{
-        background-color: #ffd188;
-        width: 300px;
-        height: 4px;
-        border-radius: 2px;
-    border: none;
-    border-radius: 2px;
+.titulo hr{
+background-color: #ffd188;
+width: 300px;
+height: 4px;
+border-radius: 2px;
+border: none;
+border-radius: 2px;
 
 }
 .acessivel{
@@ -97,4 +101,75 @@ header{
     overflow: hidden;
     clip-path: inset(50%);
     white-space: nowrap;
+}
+
+/* cards*/
+
+.cards{
+display: flex;  
+flex-wrap: wrap;  
+gap: 10%;
+justify-content: center;
+}
+
+.card{
+width: 350px;
+height: 500px;
+background-color: #ffffff;
+border-radius: 30px;
+text-align: center;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding-bottom: 10px;
+margin-bottom: 100px;
+box-shadow: 0 4px 4px 2px #00000025;
+}
+
+.cards img{
+    width: 100%;
+    
+}
+
+.card p,
+.card span{
+    font-size: 18px;
+    width: 90%;
+}
+
+.WhatsApp{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: transform 0.5s ease-in-out,
+                filter 0.5s ease-in-out;
+
+}
+.WhatsApp img{
+    width: 80px;
+    filter: drop-shadow(0 5px 1px #00000025);
+}
+
+
+.WhatsApp:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 10px 2px #00000025);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    background-color: #ffd188;
+    height: 50px;
+    align-items: center;
+}
+
+footer p{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Julius Sans One", sans-serif;
 }
