@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bellota", system-ui;
+}
+
+body {
+    background-color: #fff6e8;
+}
+
+header {
+    background-color: #ffd188;
+    height: 100px;
+}
+
+.container_cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1440px;
+    /*background-color: aqua;*/
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+
+.icone_home {
+    height: 50px;
+}
+
+.box_busca {
+    position: relative;
+    width: 60%;
+    max-width: 500px;
+    margin: 0 10px;
+
+    font-size: 1rem;
+}
+
+.icone_lupa {
+    height: 24px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    fill: #b0b0b0;
+}
+
+.logo {
+    height: 60px;
+}
+
+.campo_busca {
+    height: 32px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px #cccccc;
+    padding-left: 2.5rem;
+}
+
+.acessivel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.container_cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_cadastro h2 {
+    font-size: 48px;
+    margin-top: 100px;
+}
+
+.container_cadastro hr {
+    background-color: #ffd188;
+    width: 300px;
+    height: 4px;
+    border-radius: 2px;
+    border: none;
+    background-color: #ffd188;
+    margin-bottom: 100px;
+    
+}
+
+.box_cadastro{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+
+}
+
+.cadastro_coluna1{
+    background-color: blue;
+    width: 45%;
+}
+
+.cadastro_coluna2{
+    background-color: blueviolet;
+    width: 45%;
+}
+
+.categoria_img{
+    display: flex;
+}
+.valor_peso{
+    display: flex;
+}

@@ -53,7 +53,7 @@ header{
     padding-left: 2.5rem;
 }
 
-.lobo{
+.logo{
     height: 60px;
 }
 
@@ -85,6 +85,7 @@ header{
     font-size: 48px;
     
 }
+
 .titulo hr{
 background-color: #ffd188;
 width: 300px;
@@ -92,7 +93,6 @@ height: 4px;
 border-radius: 2px;
 border: none;
 border-radius: 2px;
-
 }
 .acessivel{
     position: absolute; 
@@ -172,4 +172,13 @@ footer p{
     font-size: 20px;
     text-align: center;
     font-family: "Julius Sans One", sans-serif;
+}
+
+
+/*media*/
+
+@media screen and (max-width: 600px){
+    .banner{
+        aspect-ratio: 2.0;
+    }
 }
