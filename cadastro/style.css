@@ -5,12 +5,18 @@
     font-family: "Bellota", system-ui;
 }
 
+:root{
+    ---corPrincipal: #ffd188;
+    ---arredondamento: 10px;
+    --sobra: 0 4px 4px 2px #00000025;
+}
+
 body {
     background-color: #fff6e8;
 }
 
 header {
-    background-color: #ffd188;
+    background-color: var(---corPrincipal);
     height: 100px;
 }
 
@@ -69,24 +75,29 @@ header {
     white-space: nowrap;
 }
 
+/* cadastro */
+
+.container_lista,
 .container_cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.container_lista h2,
 .container_cadastro h2 {
     font-size: 48px;
     margin-top: 100px;
 }
 
+.container_lista hr,
 .container_cadastro hr {
-    background-color: #ffd188;
+    background-color: var(---corPrincipal);
     width: 300px;
     height: 4px;
     border-radius: 2px;
     border: none;
-    background-color: #ffd188;
+    background-color: var(---corPrincipal);
     margin-bottom: 100px;
     
 }
@@ -160,9 +171,9 @@ header {
     margin: 50px 0px;
     border-radius: 10px;
     border: none;
-    background-color: #ffd188;
+    background-color: var(---corPrincipal);
     padding: 10px 200px;
-    box-shadow: 0 4px 4px 2px #00000025;
+    box-shadow: var(--sobra);
     cursor: pointer;
 }
 
@@ -195,7 +206,54 @@ input[type="file"]{
     width: 40%;
 }
 
+
+
+
+/* lista */
+table{
+    /* background-color: aquamarine; */
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    border-bottom: solid 2px var(---corPrincipal);
+    padding: 0 3px 5px 3px;
+    font-size: 18px;
+}
+td{
+   padding-top: 10px 3px 0 3px;
+   border-bottom: solid 2px #b3b3b350;
+   padding: 20px;
+}
+ table svg{
+    width: 30px;
+    cursor: pointer;
+ }
+ footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    background-color: #ffd188;
+    height: 50px;
+    align-items: center;
+}
+
+footer p{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Julius Sans One", sans-serif;
+}
+
 /* media */
+    @media screen and (max-width: 1000px){
+        table{
+            width: 98%;
+        }
+    }
     @media screen and (max-width: 758px){
         .box_cadastro{
             flex-direction: column;
@@ -209,4 +267,38 @@ input[type="file"]{
             padding: 10px 100px;
         }
 
+        /* lista */
+        table{
+            text-align: left;
+            max-width: 460px;
+        }
+        thead{
+        display: none;
+        }
+        tr{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            border-radius: var(---arredondamento);
+            border: solid 1px var(---corPrincipal);
+            box-shadow: var(--sobra);
+        }
+        td{
+            border-bottom: none;
+
+        }
+        td::before{
+            content: attr(data-cell) ;
+            font-weight: 600;
+            border-bottom: solid 2px #00000025;
+        }
+        
+        td:last-child{
+            align-self: flex-end;
+
+        }
+
     }
+
+
