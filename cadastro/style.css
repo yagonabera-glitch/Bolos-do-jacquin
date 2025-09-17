@@ -98,7 +98,7 @@ header {
     border-radius: 2px;
     border: none;
     background-color: var(---corPrincipal);
-    margin-bottom: 100px;
+    margin-bottom: 75px;
     
 }
 
@@ -226,7 +226,7 @@ th{
 td{
    padding-top: 10px 3px 0 3px;
    border-bottom: solid 2px #b3b3b350;
-   padding: 20px;
+   padding: 10px;
 }
  table svg{
     width: 30px;
@@ -246,6 +246,10 @@ footer p{
     font-size: 20px;
     text-align: center;
     font-family: "Julius Sans One", sans-serif;
+}
+
+.fim{
+margin-bottom:  100px ;
 }
 
 /* media */
