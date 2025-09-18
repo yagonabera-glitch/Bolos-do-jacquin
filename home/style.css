@@ -13,12 +13,49 @@
     clip-path: inset(50%);
     white-space: nowrap;
 }
+body{
+    background-color: #fff6e8;
+}
 
+.main_home{
+    width: 90%;
+    max-width: 1440px;
+    display: flex;
+    gap: 0%;
+   margin: 0 auto;
+   /* background-color: firebrick; */
+}
+
+.secao_logo{
+   display: flex;
+   flex-direction: column;
+  width: 360;
+
+   justify-content: space-between;
+   align-items: center;
+}
 .secao_logo svg{
+    
     width: 240px;
+    margin-top: 50px;
+}
+.secao_logo img{
+    width: 300px;
+}
+.secao_cards{
+     width: calc(100% - 360px);
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+    
+    
+    
 }
 
 .card{
+    margin-top: 15px;
     height: 360px;
     width: 260px;
     display: block;
@@ -28,6 +65,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 25px;
+
     padding: 10px 10px 40px 10px;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +81,25 @@
     background: linear-gradient(180deg,rgba(15, 0, 153, 1) 0%, rgba(8, 94, 204, 1) 49%, rgba(0, 187, 255, 1) 100%);
 
 }
+.card_morango{
+    background: linear-gradient(180deg,rgba(114, 3, 3, 1) 42%, rgba(185, 2, 2, 1) 88%, rgba(255, 0, 0, 1) 100%);
+}
+
+.card_natal{
+    background: linear-gradient(180deg,rgba(35, 70, 19, 1) 48%, rgba(45, 90, 25, 1) 64%, rgba(61, 120, 33, 1) 79%, rgba(87, 172, 47, 1) 100%);
+
+}
+
+.card_coco{
+    background: linear-gradient(180deg,rgba(121, 62, 2, 1) 40%, rgba(177, 90, 3, 1) 80%, rgba(223, 114, 4, 1) 100%);
+
+}
+
+.card_Destaque{
+    background: linear-gradient(46deg,rgba(129, 0, 189, 1) 0%, rgba(94, 0, 138, 1) 31%, rgba(59, 0, 87, 1) 100%);
+
+}
+
 
 .card svg:first-child{
 
@@ -55,3 +112,72 @@
     width: 150px;
 }
 
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    background-color: #ffd188;
+    height: 50px;
+    align-items: center;
+}
+
+footer p{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+.WhatsApp{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: transform 0.5s ease-in-out,
+                filter 0.5s ease-in-out;
+
+}
+.WhatsApp img{
+    width: 80px;
+    filter: drop-shadow(0 5px 1px #00000025);
+}
+
+
+.WhatsApp:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 10px 2px #00000025);
+}
+
+
+/* media */
+@media screen and (max-width: 1050px){
+     .main_home{
+    flex-direction: column;
+    align-items: center;  
+    width: 95%;
+
+}
+.secao_logo{
+    margin-top: 50px;
+    position: relative;
+}
+.secao_logo svg{
+position: absolute;
+top: 200px;
+background-color: #ffd188;
+padding: 20px 40px;
+border-radius: 20px;
+box-shadow: 0 4px 4px 2px #00000025;
+}
+.secao_logo img{
+    width: 150px;
+}
+.secao_cards{
+    width: 100%;
+    margin-top: 20px;
+}
+.card{
+    margin-top: 20px;
+}
+
+}
